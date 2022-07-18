@@ -1,0 +1,90 @@
+.class1{
+    background-color: blue;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    border: 1px black;
+    cursor: pointer;
+}
+
+.class1:hover{
+    color: aquamarine;
+    transform: translateX(-2px) translateY(-2px);
+}
+
+.class2{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.class3{
+    height: 100px;
+    width: 100px;
+    background-color: tomato;
+    transition: width linear 3s;
+}
+
+.class3:hover {
+    width: 200px;
+}
+
+.class4{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: purple;
+    border: 2px dotted white;
+}
+
+.class5{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.class5a{
+    height: 200px;
+    width: 120px;
+    border: red 2px solid;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+@media (max-width:500px) {
+    .class5{
+        display: flex;
+        flex-direction: column;
+        justify-content: center
+    }
+
+    .class5a{
+        width: 400px;
+        height: 50px;
+    }
+}
+
+.class6{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border: 2px solid blue;
+    animation: gautam;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes gautam{
+    from{
+        border-radius: 0%;
+    }
+    to{
+        height: 200px ;
+        width: 200px;
+        border-radius: 50%;
+        background-color: red;
+    }
+    
+}
+
+
